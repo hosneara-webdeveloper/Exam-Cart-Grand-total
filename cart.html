@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap eanable dark mode css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Summer Collection</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar d-none d-lg-flex shadow navbar-expand-lg ">
+            <div class="container">
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand fs-4 text-warning fw-semibold" href="index.html">Summer Collection</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-warning " type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- offcanvas navbar-->
+        <nav class="navbar shadow d-lg-none">
+            <div class="container">
+                <a class="navbar-brand text-warning fw-semibold" href="index.html">Summer Collection</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-warning" id="offcanvasNavbarLabel">Summer Collection</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-warning" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <p id="match"></p>
+    <p id="inputEmail"></p>
+    <p id="inputPassword"></p>
+    <p id="inputConfirmPassword"></p>
+    <p id="login"></p>
+
+
+    <section class="py-4 section-2">
+        <div class="container">
+            <div class="row">
+                <div id="cart1" class="col-12 col-lg-4">
+                    <div  class="card">
+                        <img src="images/girl2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girls Sunglasses</h5>
+                            <p class="card-text">Protect & style on your eyes in your summer</p>
+                            <h4>$ <span id="price1">190</span></h4>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-warning" id="plus1">+</button>
+                                <input type="number" class="form-control text-center" disabled id="count1" value="1"
+                                    min="0">
+
+                                <button type="button" class="btn btn-warning" id="minus1">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart2" class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="images/girl6.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girls Sunglasses</h5>
+                            <p class="card-text">Protect & style on your eyes in your summer</p>
+                            <h4>$ <span id="price2">200</span></h4>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-warning" id="plus2">+</button>
+                                <input type="number" class="form-control text-center" disabled id="count2" value="1"
+                                    min="0">
+
+                                <button type="button" class="btn btn-warning" id="minus2">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart3" class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="images/girl3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girls Sunglasses</h5>
+                            <p class="card-text">Protect & style on your eyes in your summer</p>
+                            <h4>$ <span id="price3">250</span></h4>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-warning" id="plus3">+</button>
+                                <input type="number" class="form-control text-center" disabled id="count3" value="1"
+                                    min="0">
+
+                                <button type="button" class="btn btn-warning" id="minus3">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center py-3 shadow mt-3">
+                <div class="col-12 col-lg-4">
+                    <h4>Sum Total</h4>
+                    <h5>$ <span id="sum">0.00</span></h5>
+
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h4>Tax: 15%</h4>
+
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h4 >Grand Total</h4>
+                    <h5>$ <span id="grand">0.00</span></h5>
+                    <!-- Button trigger modal -->
+                    <button id="order" type="button" class="btn btn-warning float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Order Now
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="text-center text-success">Your order received successfully</h3>
+                                    <h4 class="text-center text-danger">Thank You</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <h4 class="text-warning pt-0 mt-0 fw-semibold">Summer Collection</h4>
+                    <p>Summer collection always present your dress according to your different demand. We flow consumers
+                        choice and their comfortable wear</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Place</h4>
+                    <ul class="list-none ps-3">
+                        <li>Dhaka</li>
+                        <li>Sylhet</li>
+                        <li>Faridpur</li>
+                        <li>Khulna</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Service</h4>
+                    <ul class="list-none ps-3">
+                        <li>First delivery</li>
+                        <li>24 hours Service Facilities</li>
+                        <li>Good Response</li>
+                        <li>Trusted payment</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Contact</h4>
+                    <ul class="list-none ps-3">
+                        <li>Phone number:001234</li>
+                        <li>Email:Summer@gamail.com</li>
+                        <li>Fax number:042540</li>
+                        <li>Emergency:0014578</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- main js -->
+    <script src="js/cart.js"></script>
+    <!-- bootstrap enable dark mode js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

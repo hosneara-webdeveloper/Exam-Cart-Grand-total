@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap eanable dark mode css -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Summer Collection</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar d-none d-lg-flex shadow navbar-expand-lg ">
+            <div class="container">
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand fs-4 text-warning fw-semibold" href="index.html">Summer Collection</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-warning " type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- offcanvas navbar-->
+        <nav class="navbar shadow d-lg-none">
+            <div class="container">
+                <a class="navbar-brand text-warning fw-semibold" href="index.html">Summer Collection</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-warning" id="offcanvasNavbarLabel">Summer Collection</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-warning" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <section class="py-4 section-2">
+        <div class="container">
+            <h3 class="text-center text-primary">Login Us</h3>
+            <div class="row py-5 align-items-center">
+                <div class="col-12 col-lg-6">
+                   <div class="mx-auto text-center">
+                    <img class="w-75" src="images/login.png" alt="">  
+                   </div> 
+                </div>
+                <div class="col-12 col-lg-6">
+                    <form class="row g-3">
+                        <div class="col-12">
+                          <label for="inputEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail" placeholder="admin@admin.com">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputPassword" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword" placeholder="123456">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="123456">
+                            <p id="match" class="text-danger">Password dose not match</p>
+                          </div>
+                       
+                       
+                      </form> 
+                      <div class="col-12 pt-3">
+                        <button id="login" type="submit" class="btn btn-warning">login</button>
+                      </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <h4 class="text-warning pt-0 mt-0 fw-semibold">Summer Collection</h4>
+                    <p>Summer collection always present your dress according to your different demand. We flow consumers choice and their comfortable wear</p>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Place</h4>
+                    <ul class="list-none ps-3">
+                        <li>Dhaka</li>
+                        <li>Sylhet</li>
+                        <li>Faridpur</li>
+                        <li>Khulna</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Service</h4>
+                    <ul class="list-none ps-3">
+                        <li>First delivery</li>
+                        <li>24 hours Service Facilities</li>
+                        <li>Good Response</li>
+                        <li>Trusted payment</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4>Contact</h4>
+                    <ul class="list-none ps-3">
+                        <li>Phone number:001234</li>
+                        <li>Email:Summer@gamail.com</li>
+                        <li>Fax number:042540</li>
+                        <li>Emergency:0014578</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- main js -->
+    <script src="js/cart.js"></script>
+    <!-- bootstrap enable dark mode js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
